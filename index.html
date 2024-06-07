@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalu Prize App Marketing</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Slider styles */
+        .slider {
+            margin-top: 20px;
+            overflow: hidden; /* Ensure the images don't overflow */
+        }
+
+        .slider img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease; /* Add transition for smooth sliding */
+        }
+
+        /* Main content styles */
+        .main-content {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 40px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./Lulu-Logo.png" alt="Lalu Prize Logo">
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="container">
+            <!-- Add your slider images here -->
+            <img src="./Banner-temblate-01.jpg" alt="Slider Image 1">
+            <img src="./thumbnail-Banner-1903-370-copy.avif" alt="Slider Image 2">
+            <img src="./Banner-temblate-01.jpg" alt="Slider Image 3">
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Welcome to Lalu Prize App</h1>
+            <p>Description of the app goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="download-btn">Download</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lalu Prize App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for slider functionality
+        const slider = document.querySelector('.slider');
+        let isSliding = false;
+
+        function slide() {
+            if (!isSliding) {
+                isSliding = true;
+                setTimeout(() => {
+                    const firstSlide = slider.firstElementChild;
+                    slider.style.transition = 'none';
+                    slider.style.transform = 'translateX(-100%)';
+                    setTimeout(() => {
+                        slider.appendChild(firstSlide);
+                        slider.style.transition = 'transform 0.5s ease';
+                        slider.style.transform = 'translateX(0)';
+                        isSliding = false;
+                    }, 50);
+                }, 3000);
+            }
+        }
+
+        slide();
+        setInterval(slide, 4000); // Change slide every 4 seconds
+    </script>
+</body>
+</html>
