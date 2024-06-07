@@ -14,26 +14,32 @@
 
         /* Global styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
-            width: 80%;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         /* Header styles */
         header {
-            background-color: #fff;
+            background-color: #007bff;
+            color: #fff;
             padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-bottom: 4px solid #0056b3;
         }
 
-        header img {
-            max-width: 200px;
-            display: block;
-            margin: 0 auto;
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         /* Slider styles */
@@ -54,29 +60,30 @@
             text-align: center;
         }
 
-        .main-content h1 {
-            font-size: 36px;
+        .main-content h2 {
+            font-size: 28px;
             margin-bottom: 20px;
+            color: #007bff;
         }
 
         .main-content p {
             font-size: 18px;
-            color: #666;
             margin-bottom: 30px;
+            color: #555;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 10px 40px;
-            background-color: #007bff;
+            padding: 12px 50px;
+            background-color: #0056b3;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
             transition: background-color 0.3s;
         }
 
         .download-btn:hover {
-            background-color: #0056b3;
+            background-color: #004080;
         }
 
         /* Footer styles */
@@ -90,31 +97,37 @@
         footer p {
             font-size: 14px;
         }
+        img{
+            height: 400px;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="./Lulu-Logo.png" alt="Lalu Prize Logo">
+            <h1>Lalu Prize App</h1>
+            <p>Discover Exclusive Deals and Offers</p>
         </div>
     </header>
 
     <section class="slider">
         <div class="container">
             <!-- Add your slider images here -->
-            <img src="./Banner-temblate-01.jpg" alt="Slider Image 1">
-            <img src="./thumbnail-Banner-1903-370-copy.avif" alt="Slider Image 2">
-            <img src="./Banner-temblate-01.jpg" alt="Slider Image 3">
+            <img src="./WhatsApp Image 2024-06-07 at 1.42.31 PM.jpeg" alt="Slider Image 1">
+            <!-- <img src="./thumbnail-Banner-1903-370-copy.avif" alt="Slider Image 2">
+            <img src="./Banner-temblate-01.jpg" alt="Slider Image 3"> -->
         </div>
     </section>
 
     <section class="main-content">
         <div class="container">
-            <h1>Welcome to Lalu Prize App</h1>
-            <p>Description of the app goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>Welcome to Lalu Prize App</h2>
+            <p>Discover exclusive deals and offers in Bahrain with the Lalu Prize app. Lalu Prize offers a unique opportunity for users to participate in lucky draws and stand a chance to win exciting prizes. Whether it's discounts on your favorite brands, vouchers for local restaurants, or even big-ticket items like smartphones and gadgets, Lalu Prize has something for everyone.</p>
+            <p>Download the app now and start exploring a world of possibilities. Don't miss out on your chance to win big with Lalu Prize!</p>
             <a href="#" class="download-btn">Download</a>
         </div>
     </section>
+    
 
     <footer>
         <div class="container">
